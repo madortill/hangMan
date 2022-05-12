@@ -1,0 +1,97 @@
+.tillhang {
+    background-color: white;
+    font-family: "Amatica";
+}
+
+.tillhangContainer {
+    padding: 1em;
+    width: 92vw;
+    height: 80vh;
+    background-image: url("../../assets/images/tillhang/whiteBoard.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    flex-direction: column;
+}
+
+.tillhangTitle {
+    font-size: 2.5em;
+}
+
+.tillhangHanger {
+    width: 40vw;
+}
+ 
+.tillhangTitleDefinition {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tillhangDefinition {
+    font-size: 1.7em;
+}
+
+.tillhangLetterSpace {
+    width: 90vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.letterSpace {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 0.1em solid black ;
+    width: 8vw;
+    height: 8vh;
+}
+
+.letterSpaceDash {
+    width: 5vw;
+    height: 2vh;
+}
+
+.tillhangkeyBoard {
+    margin: 0.5em;
+    width: 80vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.keyboardLetter  {
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 8vw;
+    height: 5vh;
+    text-align: center;
+    background-color: gray;
+    line-height: 0.9;
+    margin: 0.1em;
+    border-radius: 0.4em;
+}
+
+.tillHangNextQuestion {
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+    width: 10vw;
+}
+
+.tillhangEndButton {
+    font-size: 1.7em;
+    font-weight: bold;
+    background-color: #bfbfbf;
+    padding: 0 0.5em;
+    padding-bottom: 0.2em;
+    border-radius: 0.3em;
+}
+
+.tillhangEndMan {
+    width: 24vw;
+    padding: 1em;
+}
