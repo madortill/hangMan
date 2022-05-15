@@ -59,7 +59,7 @@ const createHangman = () => {
     let content = El("div", {classes: [`tillhangContainer`, `flexCenter`]},
         El("div",{cls: `tillhangTitle`}, `איש תלוי`),
         El("div",{cls: `tillhangPicContainer`},
-            El("img",{classes: [`tillhangHanger`], attributes: {src: `../assets/images/tillhang/hanger.png`}}),
+            El("img",{classes: [`tillhangHanger`], attributes: {src: `../assets/images/tillhang/hanger0.svg`}}),
         ),
         El("div",{cls: `tillhangTitleDefinition`}, `הגדרה:`),
         El("div",{cls: `tillhangDefinition`}, arrTillhangQuestion[nTillhangCurrentQuestion].definition),
@@ -102,8 +102,8 @@ const checkLetter = (event) => {
     }
     if(bWrong) {
         nWrongAns++;
+        document.querySelector(`.tillhangHanger`).setAttribute("src", `../assets/images/tillhang/hanger${nWrongAns}.svg`);
     }
-    // document.querySelector(`.tillhangHanger`).setAttribute("src", `../assets/images/tillhang/hanger${nWrongAns}.png`);
     if(nCorrectAns === arrTillhangQuestion[nTillhangCurrentQuestion].answer.length){
         //send to win
         tillhangQuestionFeedback(true);
