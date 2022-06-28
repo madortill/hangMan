@@ -6,13 +6,17 @@ body, html {
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
-    background-size: cover;
+}
+
+body {
+    background-image: url("../../assets/images/tillhang/background.svg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 @font-face {
-    font-family: Amatica;
-    src: url("../assets/fonts/Amatica/AmaticaSC-Regular.ttf");
+    font-family: gadi;
+    src: url("../assets/fonts/gadi-almog-regular-aaa.otf");
     font-weight: 500;
 }
 
@@ -50,17 +54,14 @@ body, html {
 }
 
 .tillhang {
-    background-color: white;
-    font-family: "Amatica";
+    color: white;
+    font-family: "gadi";
 }
 
 .tillhangContainer {
     padding: 1em;
     width: 92vw;
     height: 80vh;
-    background-image: url("../../assets/images/tillhang/whiteBoard.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     /* flex-wrap: wrap; */
     text-align: center;
     flex-direction: column;
@@ -71,16 +72,17 @@ body, html {
 }
 
 .tillhangHanger {
-    width: 40vw;
+    width: 28vw;
+    margin: 1em;
 }
  
 .tillhangTitleDefinition {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .tillhangDefinition {
-    font-size: 1.7em;
+    font-size: 1.1em;
 }
 
 .tillhangLetterSpace {
@@ -89,14 +91,18 @@ body, html {
     align-content: center;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
+    top: 26vh;
 }
 
 .letterSpace {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: bold;
-    border-bottom: 0.1em solid black ;
+    border-bottom: 0.1em solid transparent;
+    border-image: url("../assets/images/tillhang/underline.svg") 2 stretch;
     width: 8vw;
     height: 8vh;
+    line-height: 2.6;
 }
 
 .letterSpaceDash {
@@ -105,32 +111,33 @@ body, html {
 }
 
 .tillhangkeyBoard {
-    margin: 0.5em;
     width: 80vw;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    top: 65vh;
 }
 
 .keyboardLetter  {
-    font-size: 1.6em;
-    font-weight: bold;
-    width: 8vw;
-    height: 5vh;
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    width: 7vw;
+    height: 4vh;
     text-align: center;
-    background-color: gray;
-    line-height: 0.9;
+    background-color: #034442;
+    line-height: 1.4;
     margin: 0.1em;
     border-radius: 0.4em;
+    padding: 0.2em;
 }
 
 .tillHangNextQuestion {
     position: absolute;
     bottom: 10vh;
     left: 5vw;
-    width: 10vw;
+    width: 20vw;
 }
 
 .tillhangEndButton {
@@ -147,6 +154,70 @@ body, html {
     padding: 1em;
 }
 
+.boardContainer .boardFlex {
+    display: flex;
+}
+
+.boardContainer {
+    top: 17vh;
+}
+
+.tillhangDefinitionContainer {
+    width: 50vw;
+}
+
+/* about */
+
+.aboutInfo {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    direction: rtl; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("../../assets/images/tillhang/backgroundAbout.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "gadi";
+    font-size: 0.7em;
+}
+
+.aboutTextContainer {
+    top: 16vh;
+    width: 51vw;
+}
+
+.aboutTextContainer div {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.xIcon {
+    position: absolute;
+    bottom: 10vh;
+    right: 5vw;
+    width: 20vw;
+}
+
+.tillLogo {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+    width: 20vw;
+}
+
+.odotButton {
+    position: absolute;
+    top: 3vh;
+    left: 5vw;
+    width: 8vw;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
 .bg {
     direction: rtl; 
     position: fixed;
@@ -160,7 +231,7 @@ body, html {
 .centerX {
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
 }
 
 .flexCenter {
