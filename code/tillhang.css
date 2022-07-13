@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    background-image: url("../../assets/images/tillhang/background.svg");
+    background-image: url("../assets/images/tillhang/background.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -176,7 +176,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
-    background-image: url("../../assets/images/tillhang/backgroundAbout.svg");
+    background-image: url("../assets/images/tillhang/backgroundAbout.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: white;
