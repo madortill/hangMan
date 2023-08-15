@@ -78,11 +78,14 @@ body {
  
 .tillhangTitleDefinition {
     font-size: 1.5em;
+    margin-top: 1vh;
     font-weight: bold;
 }
 
 .tillhangDefinition {
     font-size: 1.1em;
+    line-height: 4vh;
+    margin-top: 1vh;
 }
 
 .tillhangLetterSpace {
@@ -212,6 +215,7 @@ body {
     position: absolute;
     top: 3vh;
     left: 5vw;
+    transform: rotate(180deg);
     width: 8vw;
 }
 
